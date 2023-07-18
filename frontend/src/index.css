@@ -114,3 +114,26 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+
+@keyframes errorShake {
+  0% {
+    margin-left: 0rem;
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+input.error {
+  border: 1px solid var(--error);
+  animation: errorShake 0.2s ease-in-out 0s 2;
+}
